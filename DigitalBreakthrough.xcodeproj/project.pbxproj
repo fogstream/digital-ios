@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19B973BFFAD89E571A0BB4AA /* libPods-DigitalBreakthrough.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A461D5CE8002E248A06A089 /* libPods-DigitalBreakthrough.a */; };
 		E1630AC922D953CF00B67C0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1630AC822D953CF00B67C0B /* AppDelegate.swift */; };
 		E1630ACB22D953CF00B67C0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1630ACA22D953CF00B67C0B /* ViewController.swift */; };
 		E1630ACE22D953CF00B67C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1630ACC22D953CF00B67C0B /* Main.storyboard */; };
 		E1630AD022D953D400B67C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1630ACF22D953D400B67C0B /* Assets.xcassets */; };
 		E1630AD322D953D400B67C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1630AD122D953D400B67C0B /* LaunchScreen.storyboard */; };
+		E1630ADD22D96D8500B67C0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1630ADC22D96D8500B67C0B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A461D5CE8002E248A06A089 /* libPods-DigitalBreakthrough.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigitalBreakthrough.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		886ABA583A06D1A5F773C254 /* Pods-DigitalBreakthrough.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalBreakthrough.release.xcconfig"; path = "Target Support Files/Pods-DigitalBreakthrough/Pods-DigitalBreakthrough.release.xcconfig"; sourceTree = "<group>"; };
+		D67C1033B4DF94A2009451CB /* Pods-DigitalBreakthrough.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalBreakthrough.debug.xcconfig"; path = "Target Support Files/Pods-DigitalBreakthrough/Pods-DigitalBreakthrough.debug.xcconfig"; sourceTree = "<group>"; };
 		E1630AC522D953CF00B67C0B /* DigitalBreakthrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalBreakthrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1630AC822D953CF00B67C0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1630ACA22D953CF00B67C0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		E1630ACF22D953D400B67C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1630AD222D953D400B67C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1630AD422D953D400B67C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1630ADC22D96D8500B67C0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Users/vladeliseev/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B973BFFAD89E571A0BB4AA /* libPods-DigitalBreakthrough.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B72F470A93A776F35958FA7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D67C1033B4DF94A2009451CB /* Pods-DigitalBreakthrough.debug.xcconfig */,
+				886ABA583A06D1A5F773C254 /* Pods-DigitalBreakthrough.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E1630ABC22D953CF00B67C0B = {
 			isa = PBXGroup;
 			children = (
 				E1630AC722D953CF00B67C0B /* DigitalBreakthrough */,
 				E1630AC622D953CF00B67C0B /* Products */,
+				B72F470A93A776F35958FA7A /* Pods */,
+				E756ABC9BE69FD0FBCA3F52C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,17 @@
 				E1630ACF22D953D400B67C0B /* Assets.xcassets */,
 				E1630AD122D953D400B67C0B /* LaunchScreen.storyboard */,
 				E1630AD422D953D400B67C0B /* Info.plist */,
+				E1630ADC22D96D8500B67C0B /* GoogleService-Info.plist */,
 			);
 			path = DigitalBreakthrough;
+			sourceTree = "<group>";
+		};
+		E756ABC9BE69FD0FBCA3F52C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A461D5CE8002E248A06A089 /* libPods-DigitalBreakthrough.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1630AD722D953D400B67C0B /* Build configuration list for PBXNativeTarget "DigitalBreakthrough" */;
 			buildPhases = (
+				618D39E5A8248F4888579EA5 /* [CP] Check Pods Manifest.lock */,
 				E1630AC122D953CF00B67C0B /* Sources */,
 				E1630AC222D953CF00B67C0B /* Frameworks */,
 				E1630AC322D953CF00B67C0B /* Resources */,
+				101D5D55290E18F48072FD5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1630AD322D953D400B67C0B /* LaunchScreen.storyboard in Resources */,
+				E1630ADD22D96D8500B67C0B /* GoogleService-Info.plist in Resources */,
 				E1630AD022D953D400B67C0B /* Assets.xcassets in Resources */,
 				E1630ACE22D953CF00B67C0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		101D5D55290E18F48072FD5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigitalBreakthrough/Pods-DigitalBreakthrough-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigitalBreakthrough/Pods-DigitalBreakthrough-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		618D39E5A8248F4888579EA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigitalBreakthrough-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1630AC122D953CF00B67C0B /* Sources */ = {
@@ -280,6 +357,7 @@
 		};
 		E1630AD822D953D400B67C0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67C1033B4DF94A2009451CB /* Pods-DigitalBreakthrough.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +376,7 @@
 		};
 		E1630AD922D953D400B67C0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 886ABA583A06D1A5F773C254 /* Pods-DigitalBreakthrough.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
