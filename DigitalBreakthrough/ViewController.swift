@@ -14,12 +14,17 @@ struct ImageDisplay {
     let name: String
 }
 
-class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func makePhotoTapped(_ sender: UIBarButtonItem) {
         print("Making a photo...")
+        let vc = UIImagePickerController()
+        vc.sourceType = .camera
+        vc.allowsEditing = true
+        vc.delegate = self
+        present(vc, animated: true)
     }
     
     var textRecognizer: VisionTextRecognizer!
@@ -29,6 +34,17 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // Do any additional setup after loading the view.
         let vision = Vision.vision()
         textRecognizer = vision.onDeviceTextRecognizer()
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        guard let image = info[.editedImage] as? UIImage else {
+            print("No image found")
+            return
+        }
+        
+        imageView.image = image
     }
 
     @IBAction func findTextTapped(_ sender: UIButton) {
@@ -62,16 +78,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     func removeFrames() {
         print("Removing frames")
-    }
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        // WTF???
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        // WTF???
-        return 1
     }
 
 }
